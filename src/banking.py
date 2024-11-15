@@ -11,3 +11,9 @@ class BaseBenefit(BenefitStrategy):
         benefit = amount * 0.02
         print(f'Base Benefit: {benefit}')
         return amount + benefit 
+
+class MemberBenefit(BenefitStrategy):
+    def apply_benefit(self, amount):
+        benefit = amount * 0.022
+        print(f'Membership Benefit: {benefit}')
+        return amount + benefit
