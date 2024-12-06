@@ -8,7 +8,7 @@ class BenefitStrategy(ABC):
 
 class BaseBenefit(BenefitStrategy):
     def apply_benefit(self, amount):
-        benefit = amount * 0.02
+        benefit = amount * 0.04
         print(f'Base Benefit: {benefit}')
         return amount + benefit 
         
@@ -17,3 +17,4 @@ class PremiumBenefit(BenefitStrategy):
         benefit = amount * 0.024
         print(f'Premium Membership Benefit: {benefit}')
         return amount + benefit
+
